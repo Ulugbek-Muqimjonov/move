@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Movies</title>
+</head>
+<body>
+    <!-- site header begin -->
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__wrapper">
+                <h1 class="site-header__title">Movies</h1>
+                <!-- <button class="site-header__speakerbtn"></button> -->
+                <form class="site-header__form">
+                    <div class="site-header__search-wrapper site-header__search-wrapper--name">
+                        <label class="site-header__form-lable" for="name">Film name :</label>
+                        <input class="site-header__input site-header__input--name" type="text" id="name" aria-label="enter serached film name" placeholder="Search..." autocomplete="off">
+                    </div>
+                    <div class="site-header__search-wrapper site-header__search-wrapper--from">
+                        <!-- <label class="site-header__form-lable" for="from">from</label> -->
+                        <input class="site-header__input site-header__input--from" type="number" name="user__serched min year" id="from" aria-label="Enter the year the movie you're looking for was made" placeholder="from" autocomplete="off" required>
+                    </div>
+                    <div class="site-header__search-wrapper site-header__search-wrapper--to ">
+                        <!-- <label class="site-header__form-lable" for="to">to</label> -->
+                        <input class="site-header__input site-header__input--to" type="number" name="user__serched max year" id="to" aria-label="Enter the year of the movie you are looking for" placeholder="to" autocomplete="off">
+                    </div>
+                    <button class="site-header__btn" type="submit">Search</button>
+                    <button class="site-header__refreshbtn" type="button">Back</button>
+                    <button class="hero__later-watchbtn btn" type="button">Watch Later</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- site header eng -->
+    
+    <!-- site main begin -->
+    <main class="site-main">
+        <section class="site-main__hero hero">
+          
+            <div class="container">
+                <ul class="hero__list">
+                    
+                </ul>
+            </div>
+
+            <div class="saved">
+                <h2 class="saved__title text-center">Saved Movies</h2>
+                <ol class="saved__list">
+                    
+                </ol>
+                <button class="saved__exit-btn" type="button"></button>
+            </div>
+        </section>
+        
+        
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- site main end -->
+    
+    <!-- site footer begin -->
+    <footer class="site-footer">
+        
+    </footer>
+    <!-- site footer end -->
+
+   
+    
+    
+    <!-- site JAVASCRIPT LINKS -->
+    <script src="./js/movies.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+</body>
+</html>
